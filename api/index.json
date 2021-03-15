@@ -27,30 +27,6 @@
             "in": "header",
             "name": "X-API-Key"
         }
-    },     
-    "schemas": {
-      "Error": {
-        "type": "object",
-        "required": [
-          "code",
-          "message"
-        ],
-        "properties": {
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "message": {
-            "type": "string"
-          }
-        }
-      },
-      "Post": {
-        "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/post.json"
-      },
-      "PostResponse": {
-        "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/postResponse.json"
-      }
     }
   },
   "security": [
