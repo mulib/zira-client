@@ -1,0 +1,38 @@
+{
+    "post": {
+        "summary": "New Zira post",
+        "requestBody": {
+            "description": "Keep the postTypeId: 1 for an ordinary post",
+            "required": true,
+            "content": {
+            "application/json": {
+                "schema": {
+                "$ref": "#/components/schemas/Post"
+                }
+            }
+            }
+        },
+        "responses": {
+            "200": {
+            "description": "Sample response: The new ID of the post",
+            "content": {
+                "application/json": {
+                "schema": {
+                    "$ref": "#/components/schemas/PostResponse"
+                }
+                }
+            }
+            },
+            "default": {
+            "description": "Unexpected error",
+            "content": {
+                "application/json": {
+                "schema": {
+                    "$ref": "#/components/schemas/Error"
+                }
+                }
+            }
+            }
+        }
+    }
+  }

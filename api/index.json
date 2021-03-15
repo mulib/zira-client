@@ -10,6 +10,34 @@
     }
   ],
   "paths": {
-    "$ref": "paths.json"
+    "/post": {
+        "$ref": "post.json"
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Post": {
+        "$ref": "./schemas/post.json"
+      },
+      "PostResponse": {
+        "$ref": "./schemas/postResponse.json"
+      }
+    }
   }
 }
