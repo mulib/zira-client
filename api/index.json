@@ -43,10 +43,10 @@
         }
       },
       "Post": {
-        "$ref": "./schemas/post.json"
+        "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/post.json"
       },
       "PostResponse": {
-        "$ref": "./schemas/postResponse.json"
+        "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/postResponse.json"
       }
     }
   }
