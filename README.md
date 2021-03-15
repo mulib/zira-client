@@ -5,6 +5,7 @@ Zira client directory
   - [Overview](#overview)
   - [Preparation](#preparation)
   - [Getting started](#getting-started)
+  - [API reference](API.md)
 
 ## Overview
 This simple repository will help you develop easy integration with our system. 
