@@ -24,27 +24,16 @@ X-API-Key: aa54d7a9-6dd0-5ab2-9834-21ccb953c060
 
 ## Getting started 
 Use your favorit http client to access our API functions. Just for demonstration, we'll use request library.
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://api.zira.us/ziraSdk/post',
-  'headers': {
-    'X-API-Key': <your API key>,
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-      "postTypeId":"1",
-      "content":"Hello <mention>4705</mention>",
-      "imageId":null,
-      "mentions":"{4705}",
-      "toChannelId":"5218",
-      "fromChannelId":"4705"
-    })
 
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log('New post id: '+response.body.data.id);
-});
+```
+POST /zira-client HTTP/1.1
+Host: api.zira.us
+Content-Type: application/json
+Content-Length: 86
+
+{
+    "postTypeId": "1",
+    "content": "Hello everyone!",
+    "toChannelId": "5218"
+}
 ```
