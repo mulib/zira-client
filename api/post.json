@@ -7,7 +7,7 @@
             "content": {
             "application/json": {
                 "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/post.json"
                 }
             }
             }
@@ -18,7 +18,7 @@
             "content": {
                 "application/json": {
                 "schema": {
-                    "$ref": "#/components/schemas/PostResponse"
+                    "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/postResponse.json"
                 }
                 }
             }
