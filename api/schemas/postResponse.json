@@ -5,8 +5,8 @@
     ],
     "properties": {
         "data": {
-        "type": "string",
-        "example": "1"
+            "type": "string",
+            "example": "1"
         }
     }
 }

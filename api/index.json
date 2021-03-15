@@ -52,5 +52,8 @@
         "$ref": "https://raw.githubusercontent.com/lightapp/zira-client/master/api/schemas/postResponse.json"
       }
     }
+  },
+  "security": {
+    "ApiKeyAuth": []
   }
 }

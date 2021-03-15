@@ -18,8 +18,5 @@
         "type": "string",
         "example": "5218"
         }
-    },
-    "security": {
-        "ApiKeyAuth": []
     }
 }
