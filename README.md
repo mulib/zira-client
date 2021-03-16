@@ -23,10 +23,10 @@ X-API-Key: aa54d7a9-6dd0-5ab2-9834-21ccb953c060
 - Keep that key secure, and don't share it with 3rd party.
 
 ## Getting started 
-Use your favorit http client to access our API functions. Just for demonstration, we'll use request library.
+Use your favorit http client to access our API functions. Below is plain HTTP request.
 
 ```
-POST /zira-client HTTP/1.1
+POST /zira-client/post HTTP/1.1
 Host: api.zira.us
 Content-Type: application/json
 Content-Length: 86
